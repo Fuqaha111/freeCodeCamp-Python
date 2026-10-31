@@ -1,3 +1,9 @@
-numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+even_numbers = [num for num in range(51) if  num % 2 == 0]
 
-print (numbers[1:6:2])
+print(even_numbers)
+
+numbers = [1, 2, 3, 4, 5]
+
+result = [(num, "even") if num % 2 == 0 else (num, "odd") for num in numbers]
+
+print (result)
