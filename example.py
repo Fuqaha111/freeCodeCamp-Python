@@ -1,9 +1,13 @@
-even_numbers = [num for num in range(51) if  num % 2 == 0]
-
-print(even_numbers)
-
-numbers = [1, 2, 3, 4, 5]
-
-result = [(num, "even") if num % 2 == 0 else (num, "odd") for num in numbers]
-
-print (result)
+def number_pattern(n):
+    if not isinstance(n, int):
+        return "Argument must be an integer value."
+    elif n < 1:
+        return "Argument must be an integer greater than 0."
+    
+    numbers = ""
+    for number in range(1, n+1):
+        numbers += str(number)
+    return numbers
+    
+        
+print(number_pattern(4))
