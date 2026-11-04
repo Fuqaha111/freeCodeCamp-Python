@@ -7,6 +7,7 @@ def number_pattern(n):
     numbers = ""
     for number in range(1, n+1):
         numbers += str(number)
+        numbers += " "
     return numbers
     
         
